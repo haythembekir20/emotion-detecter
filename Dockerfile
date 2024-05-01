@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port the app runs on
-EXPOSE 8080
+EXPOSE 5001
 
 # Run the application
-CMD ["python", "app.py"]
+#CMD ["python", "app.py"]
+CMD ["flask", "run"]
