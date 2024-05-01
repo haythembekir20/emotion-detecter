@@ -44,7 +44,7 @@ jobs:
 
       - name: Deploy to GKE
         run: |
-          gcloud container clusters get-credentials emotion-detecter-cluster --zone europe-north1-b --project emotion-detecter
+          gcloud container clusters get-credentials emotion-detector-cluster --zone europe-north1-b --project emotion-detecter
           kubectl apply -f kubernetes/deployment.yaml
 
       - name: Verify deployment
