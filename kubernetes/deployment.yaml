@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: emotion-detecter
-        image: gcr.io/emotion-detecter/emotion-detecter:v2
+        image: gcr.io/emotion-detecter/emotion-detecter:v3
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
 ---
